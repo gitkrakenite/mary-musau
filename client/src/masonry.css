@@ -1,0 +1,34 @@
+/* masonry */
+.my-masonry-grid {
+  display: flex;
+  margin-left: -30px;
+  width: auto;
+}
+
+.my-masonry-grid_column {
+  padding-left: 30px;
+  background-clip: padding-box;
+}
+
+.image-item {
+  margin-bottom: 30px;
+}
+
+.image-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* paginated nav */
+.normal-nav {
+  color: black;
+  padding: 5px 10px;
+}
+
+.active-nav {
+  background-color: rgb(13, 126, 120);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 8px;
+}

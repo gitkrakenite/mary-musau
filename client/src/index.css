@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+/* style scrollbar */
+.prompt::-webkit-scrollbar {
+  width: 1px !important;
+}
+
+.prompt::-webkit-scrollbar-thumb {
+  background-color: rgb(7, 10, 10);
+  border-radius: 10px;
+}
+
+/* @media (max-width: 500px) {
+  .prompt::-webkit-scrollbar {
+    display: none;
+  }
+
+  .prompt {
+    -ms-overflow-style: none; 
+    scrollbar-width: none; 
+  }
+} */
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.hide-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+/* attempt */
+/* For WebKit-based browsers (Chrome, Safari) */
+/* Customize the scrollbar background and color */
+/* Note: Some properties might not work in all browsers */
+::-webkit-scrollbar {
+  width: 5px; /* Adjust the width as needed */
+  background-color: transparent;
+  display: none;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(5, 160, 129);
+  border-radius: 20px;
+}
+
+/* For Firefox */
+/* Customize the scrollbar color */
+/* Note: The scrollbar background color is not supported in Firefox */
+/* You can only change the scrollbar color in Firefox, not the background */
+/* You can also use 'dark' and 'light' values for scrollbar-color */
+/* to use the system's default dark or light scrollbar colors */
+html {
+  scrollbar-color: rgb(103, 104, 104);
+}
